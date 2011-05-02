@@ -1,8 +1,8 @@
-from werkzeug.local import Local, LocalProxy, release_local
+from werkzeug.local import Local, release_local
 
 
 _local = Local()
-request = LocalProxy(_local, 'request')
+request = _local('request')
 
 
 class TLSRequestMiddleware(object):

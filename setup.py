@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='django-tls',
-    version='0.0.1',
+    version='0.0.2',
     description='Stores the current request in Thread Local Storage using Werkzeug',
     long_description=open('README.rst').read(),
     author='Mikko Hellsing',
